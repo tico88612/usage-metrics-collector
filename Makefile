@@ -38,7 +38,7 @@ $(TOOLS_DIR):
 # We are using Kubebuilder Test Assets for integration testing
 K8S_VERSION=1.32.0
 KUBEBUILDER := $(abspath $(TOOLS_DIR)/kubebuilder)
-export KUBEBUILDER_ASSETS := $(KUBEBUILDER)/bin
+export KUBEBUILDER_ASSETS := $(KUBEBUILDER)/envtest
 
 # Produce CRDs that work back to Kubernetes 1.11 (no version conversion)
 CRD_OPTIONS ?= crd
